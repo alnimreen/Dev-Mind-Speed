@@ -14,6 +14,9 @@ public class GameController {
 
     @PostMapping("/start")
     public Game startGame(@RequestParam String name, @RequestParam String difficulty) {
+        if ( Integer.parseInt(difficulty) < 1 ||  Integer.parseInt(difficulty) > 4) {
+            throw new IllegalArgumentException("Difficulty must be between 1 and 4.");
+        }
         return gameService.startGame(name, difficulty);
     }
 
