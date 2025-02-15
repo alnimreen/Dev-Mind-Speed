@@ -1,8 +1,8 @@
 # Setup Instructions
 ## Prerequisites
-Java Development Kit (JDK) 17 
-Maven
-MySQL 
+- Java Development Kit (JDK) 17 
+- Maven
+- MySQL 
 
 ## Build the Project
 mvn clean install
